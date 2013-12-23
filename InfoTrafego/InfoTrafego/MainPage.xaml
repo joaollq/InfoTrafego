@@ -10,7 +10,7 @@
     <Page.Resources>
         <DataTemplate x:Key="TrafficInfoItem">
             <Border BorderThickness="1" BorderBrush="Gray">
-                <StackPanel Width="333" Height="333" RequestedTheme="Light">
+                <StackPanel Width="333" Height="400" RequestedTheme="Light">
                     <TextBlock x:Name="Heading" Text="{Binding Title}" Height="auto" MinHeight="75"  TextWrapping="Wrap" FontSize="25" FontWeight="Bold" Foreground="Black" RequestedTheme="Light" />
                     <TextBlock x:Name="Date"  Text="{Binding Date}" TextWrapping="Wrap" Height="25" Foreground="#FF0E0D0D" RequestedTheme="Light"/>
                     <Border Height="233" Width="333">
@@ -23,7 +23,7 @@
     </Page.Resources>
 
     <Grid Background="White" Margin="0,0,0,10" RequestedTheme="Light">
-        <GridView Name="grid" HorizontalAlignment="Left" Margin="20,435,20,30" VerticalAlignment="Bottom" Width="auto" Height="400" ItemTemplate="{StaticResource TrafficInfoItem}" IsTapEnabled="False">
+        <GridView Name="grid" HorizontalAlignment="Left" Margin="20,0,20,30" VerticalAlignment="Bottom" Width="auto" Height="333" ItemTemplate="{StaticResource TrafficInfoItem}" IsTapEnabled="False">
         </GridView>
         <Button Content="Pesquisar" HorizontalAlignment="Left" Margin="917,278,0,0" VerticalAlignment="Top" RequestedTheme="Light" Click="Button_Click" Width="119"/>
         <Image HorizontalAlignment="Left" Height="100" Margin="640,90,0,0" VerticalAlignment="Top" Width="100"/>
